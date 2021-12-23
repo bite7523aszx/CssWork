@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="style.css">
+<script src="js.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <title>CSS Work</title>   
+</head>
+<body>
+    <header>
+        <div id="top" >
+            <nav class="navbar navbar-light bg-light">
+                <div class="container row">
+                    <div class="col-8"><img src="header/LOGO.png" alt=""></div>
+                    <div class="col-4">
+                    <button id="logbtn"  onclick="log()" type="button" class="btn btn-primary col-3">登入</button>
+                    <button id ="iconbtn"class="navbar-toggler col-" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  </div>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="navbar-toggler-icon" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul id="dt"class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <h3 class="nav-link active" aria-current="page" href="#">test001</h1>
+                            <h6>$4,600,00(TWD)</h6> 
+                        </li>
+                        <div>___________________________________</div>
+                        <li class="nav-item">
+                          <h5 class="nav-link" href="#">出納機台</h5>
+                        </li>
+                        <li class="nav-item">
+                            <h5 class="nav-link" href="#">修改密碼</h5>
+                          </li>
+                          <li class="nav-item">
+                            <h5 class="nav-link" href="#">遊戲介紹</h5>
+                          </li>
+                          <li class="nav-item">
+                            <h5 class="nav-link" href="#">聯絡我們</h5>
+                          </li>
+                      </ul>
+                      <button id="logout"type="button" onclick="logout()" class="btn btn-primary">登出</button>
+                      <button id="lognoin" type="button"class="btn btn-primary">未登入</button>
+                    </div>
+                  </div>
+                
+              </nav>
+            </div>
+              <div id="test1">
+                  TEST0123456  | $1,000,000
+              </div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="banner/banner01.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="banner/banner02.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="banner/banner03.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="banner/banner04.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="banner/banner05.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="col-md-12" id="test2">
+            <div class="egt col-md-3 ">EGTJP</div>        
+            <div class="egttext col-md-3 ">1091179.57|</div>                                
+            <div class="egt col-md-3 ">15輪JP</div>
+            <div class="egttext  col-md-3">1091179.57</div>            
+          </div>
+          
+    </header>
+    <div>
+        <div class="menu  container">
+            <div class="row">
+            <img class ="col-sm-3 "src='button/icon_leaderboard.png'>           
+            <img class ="col-sm-3" id="iconclick1" onclick="iconclick1()"src="button/icon_slotgame.png" alt="敬請期待">
+            <img class ="col-sm-3" id="iconclick2" onclick="iconclick2()"src="button/icon_r220.png">
+            <img class ="col-sm-3" id="iconclick3" onclick="iconclick3()" src="button/icon_15w.png">  
+            </div>         
+        </div>
+    </div>
+    <div class="item container" data-aos="fade-right">
+        <div class="item1 row col-12">
+            <img  class="col-md-4" id='img1'onclick="imgch1()"src='game/card-effect.png'>
+            <img class="col-md-4" id='img2'onclick="imgch2()" src='game/electronic.png'>
+            <img class="col-md-4" id='img3'onclick="imgch3()" src='game/fish.png'>
+        </div>
+        <div class="item2 row">
+            <img  class="col-md-4 col-xs-1"id='img4'onclick="imgch4()" src='game/live.png'>
+            <img class="col-md-4 col-xs-1"id='img5'onclick="imgch5()" src='game/lottory.png'>
+            <img class="col-md-4 col-xs-1"id='img6'onclick="imgch6()" src='game/mechine.png'>
+        </div>
+        <div class="item3 row">
+            <img class="col-md-4"id='img7'onclick="imgch7()" src='game/sports.png'>
+            <img class="col-md-4"id='img8'onclick="imgch8()" src='game/fish_icon.png'>
+            <img class="col-md-4"id='img9'onclick="imgch9()" src='game/esports.png'>
+        </div>
+    </div>
+    <script>
+        AOS.init({
+            duration:3000
+        });        
+    </script>
+</body>
+<footer>
+    <div>優惠活動</div>
+    <div>會員中心</div>
+    <div>線上克服</div>
+</footer>
+
+
+</html>
